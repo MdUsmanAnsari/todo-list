@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+oveimport React, { Component } from "react";
 import TodoInput from "./Components/TodoInput";
 import TodoList from "./Components/TodoList";
 import uuid from "react-uuid";
@@ -9,10 +9,7 @@ class App extends Component {
 
 
   state = {
-    list: [
-      { text: "Learnin React", id: "dhfyh" },
-      { text: "Learnin React", id: "dhaasdfyh" },
-    ],
+    list: [ ],
     item: "",
     updateItem: false,
   };
