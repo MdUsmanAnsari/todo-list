@@ -1,38 +1,90 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
   text-align: center;
+  padding: 1rem;
+  background-image: repeating-linear-gradient(297deg, hsla(359,0%,70%,0.12) 0px,transparent 2px,hsla(359,0%,70%,0.12) 7px,transparent 9px,hsla(359,0%,70%,0.12) 14px,transparent 16px,hsla(359,0%,70%,0.12) 21px),repeating-linear-gradient(59deg, hsla(359,0%,70%,0.12) 0px,transparent 2px,hsla(359,0%,70%,0.12) 7px,transparent 9px,hsla(359,0%,70%,0.12) 14px,transparent 16px,hsla(359,0%,70%,0.12) 21px),repeating-linear-gradient(0deg, hsla(359,0%,70%,0.12) 0px,transparent 2px,hsla(359,0%,70%,0.12) 7px,transparent 9px,hsla(359,0%,70%,0.12) 14px,transparent 16px,hsla(359,0%,70%,0.12) 21px),linear-gradient(90deg, rgb(253,253,253),rgb(253,253,253));
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.app-title{
+    display: inline-block;
+    padding: .5rem 2rem;
+    margin: 2rem 0;
+    color: #fafafa;
+    transform: rotate(-10deg) skew(-10deg);
+    box-shadow: .2rem .2rem 0 rgb(201, 201, 201);
+    background-image: repeating-linear-gradient(0deg, rgb(228,150,50) 0px, rgb(228,150,50) 1px,transparent 1px, transparent 3px),repeating-linear-gradient(90deg, rgb(228,150,50) 0px, rgb(228,150,50) 1px,transparent 1px, transparent 3px),linear-gradient(90deg, rgb(251,197,51),rgb(251,197,51));
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-container{
+  padding: 1rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-container label{
+  font-size: 1.2rem;
+  display: block;
+  text-align: left;
+}
+
+.input-flex{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: .5rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container input{
+    width: 100%;
+    padding: .8rem;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    background-color: #fff;
+    border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-container button{
+  background-image: repeating-linear-gradient(0deg, rgba(129,45,170, 0.38) 0px, rgba(129,45,170, 0.38) 1px,transparent 1px, transparent 3px),repeating-linear-gradient(90deg, rgba(129,45,170, 0.38) 0px, rgba(129,45,170, 0.38) 1px,transparent 1px, transparent 3px),linear-gradient(90deg, rgb(143,48,240),rgb(143,48,240));
+    color: #fafafa;
+    padding: .8rem 1rem;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    margin-left: 1rem;
+    cursor:pointer;
+    border-radius: 4px;
+}
+
+.list-container{
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+.item-container{
+  background-color: rgb(182, 67, 172);
+  padding: 1rem;
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  color: #fff;
+  background-image: repeating-linear-gradient(0deg, rgba(129,45,170, 0.38) 0px, rgba(129,45,170, 0.38) 1px,transparent 1px, transparent 3px),repeating-linear-gradient(90deg, rgba(129,45,170, 0.38) 0px, rgba(129,45,170, 0.38) 1px,transparent 1px, transparent 3px),linear-gradient(90deg, rgb(143,48,240),rgb(143,48,240));
+}
+
+.item-container div span{
+  cursor: pointer;
+}
+
+.delete-icon{
+  margin-right: 1rem;
+}
+
+
+footer{
+  margin-top: 1rem;
 }
